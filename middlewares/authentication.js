@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 import NotFoundError from '../errors/not-found.js';
 import UnauthenticatedError from '../errors/unauthenticated.js'
-import Users from '../models/User.js';
+import Users from '../api/v1/models/User.js';
 const authorize = async (req, res, next) => {
    try {
   // check header
